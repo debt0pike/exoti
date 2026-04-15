@@ -40,7 +40,7 @@ export default function QuizPage() {
 
   const handleFinish = () => {
     const resultType = calculateResult(answers);
-    router.push(`/${locale}/result/${resultType}`);
+    router.push(`/${locale}/result/${resultType.toLowerCase()}`);
   };
 
   return (
