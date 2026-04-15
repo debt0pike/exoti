@@ -97,3 +97,4 @@ build-test.log
 # Deployment scripts
 deploy.sh
 *.log
+.vercel

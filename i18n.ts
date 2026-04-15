@@ -1,13 +1,11 @@
 import {getRequestConfig} from 'next-intl/server';
 
+const locales = ['zh', 'ko', 'en'];
+
 export default getRequestConfig(async ({requestLocale}) => {
-  // This can either be defined statically at the top-level if your locale
-  // can be determined from `headers()` or `cookies()`, or alternatively
-  // read from the URL
   let locale = await requestLocale;
 
-  // Ensure that a valid locale is used
-  if (!locale || !['zh', 'ko', 'en'].includes(locale as any)) {
+  if (!locale || !locales.includes(locale as any)) {
     locale = 'zh';
   }
 
