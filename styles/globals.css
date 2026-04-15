@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* 背景 */
+  --bg: #0a0a0f;
+  --surface: #111118;
+  --surface2: #1a1a24;
+  --border: rgba(255, 255, 255, 0.08);
+
+  /* 主色 */
+  --gold: #c9a96e;
+  --gold-light: #e8c98a;
+  --silver: #a8b2c4;
+
+  /* 文字 */
+  --text: #e8e4dc;
+  --text-dim: rgba(232, 228, 220, 0.5);
+
+  /* 维度色（雷达图） */
+  --accent-faith: #7b9cce;
+  --accent-grit: #c47a7a;
+  --accent-presence: #7cbf8c;
+  --accent-devotion: #9b7cc4;
+  --accent-connection: #c4a87c;
+  --accent-introspect: #7cc4be;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-bg text-text;
+    font-family: 'Noto Serif SC', serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-cormorant;
+  }
+
+  .font-space-mono {
+    font-family: 'Space Mono', monospace;
+  }
+}
+
+@layer components {
+  /* 按钮样式 */
+  .btn-primary {
+    @apply px-6 sm:px-8 py-3 border border-gold text-gold font-space-mono text-sm tracking-wider
+           transition-all duration-300 hover:bg-gold hover:text-black hover:border-gold
+           active:scale-95 active:bg-gold active:text-black;
+  }
+
+  .btn-secondary {
+    @apply px-6 sm:px-8 py-3 border border-white/20 text-white font-space-mono text-sm tracking-wider
+           transition-all duration-300 hover:border-gold hover:text-gold
+           active:scale-95;
+  }
+
+  /* 卡片样式 */
+  .card {
+    @apply bg-surface border border-white/8 p-4 sm:p-6;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:border-gold/50 active:scale-98;
+  }
+
+  /* 选项卡片 */
+  .option-card {
+    @apply bg-surface2 border border-white/10 p-3 sm:p-4 cursor-pointer
+           transition-all duration-150 hover:border-gold/30 active:scale-[0.99] active:bg-white/5;
+  }
+
+  .option-card.selected {
+    @apply border-gold bg-gold/5;
+  }
+
+  /* 进度条 */
+  .progress-bar {
+    @apply h-[2px] sm:h-[1px] bg-white/10 w-full;
+  }
+
+  .progress-fill {
+    @apply h-full bg-gold transition-all duration-300 ease-out;
+  }
+
+  /* 标签 */
+  .tag {
+    @apply font-space-mono text-xs border border-white/20 px-2 sm:px-3 py-1 inline-block;
+  }
+
+  .tag-gold {
+    @apply border-gold text-gold;
+  }
+}
+
+@layer utilities {
+  /* 动效 */
+  .fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  .staggered-1 {
+    animation-delay: 0.1s;
+  }
+
+  .staggered-2 {
+    animation-delay: 0.2s;
+  }
+
+  .staggered-3 {
+    animation-delay: 0.3s;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* 字体导入 */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Space+Mono:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+SC:wght@300;400;500;600&display=swap');

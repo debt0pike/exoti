@@ -1,0 +1,52 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-d757b501b8c835e1.js",
+      "static/chunks/fd9d1056-ec7bba3dc2410516.js",
+      "static/chunks/117-e1460ea6348ffe7a.js",
+      "static/chunks/main-app-4353a7f4405bf35e.js",
+      "static/chunks/app/_not-found/page-f08fc49e807b05b1.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-d757b501b8c835e1.js",
+      "static/chunks/fd9d1056-ec7bba3dc2410516.js",
+      "static/chunks/117-e1460ea6348ffe7a.js",
+      "static/chunks/main-app-4353a7f4405bf35e.js",
+      "static/css/9906761e36452e0f.css",
+      "static/chunks/app/layout-964eb25388e8d23d.js"
+    ],
+    "/[locale]/result/[type]/page": [
+      "static/chunks/webpack-d757b501b8c835e1.js",
+      "static/chunks/fd9d1056-ec7bba3dc2410516.js",
+      "static/chunks/117-e1460ea6348ffe7a.js",
+      "static/chunks/main-app-4353a7f4405bf35e.js",
+      "static/chunks/ad2866b8-0861bff5a6594d48.js",
+      "static/chunks/586-f3d5dc574a8230b5.js",
+      "static/chunks/953-32df57ae40fe48a1.js",
+      "static/chunks/app/[locale]/result/[type]/page-302ce45e88603ab9.js"
+    ],
+    "/[locale]/layout": [
+      "static/chunks/webpack-d757b501b8c835e1.js",
+      "static/chunks/fd9d1056-ec7bba3dc2410516.js",
+      "static/chunks/117-e1460ea6348ffe7a.js",
+      "static/chunks/main-app-4353a7f4405bf35e.js",
+      "static/chunks/app/[locale]/layout-1e60739d68b6b53c.js"
+    ],
+    "/[locale]/page": [
+      "static/chunks/webpack-d757b501b8c835e1.js",
+      "static/chunks/fd9d1056-ec7bba3dc2410516.js",
+      "static/chunks/117-e1460ea6348ffe7a.js",
+      "static/chunks/main-app-4353a7f4405bf35e.js",
+      "static/chunks/586-f3d5dc574a8230b5.js",
+      "static/chunks/app/[locale]/page-b27672ce51d5be44.js"
+    ],
+    "/[locale]/quiz/page": [
+      "static/chunks/webpack-d757b501b8c835e1.js",
+      "static/chunks/fd9d1056-ec7bba3dc2410516.js",
+      "static/chunks/117-e1460ea6348ffe7a.js",
+      "static/chunks/main-app-4353a7f4405bf35e.js",
+      "static/chunks/586-f3d5dc574a8230b5.js",
+      "static/chunks/app/[locale]/quiz/page-07c6fd9fdf6720d7.js"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/sitemap/route": "app/api/sitemap/route.js",
+  "/api/robots/route": "app/api/robots/route.js",
+  "/[locale]/result/[type]/page": "app/[locale]/result/[type]/page.js",
+  "/[locale]/page": "app/[locale]/page.js",
+  "/[locale]/quiz/page": "app/[locale]/quiz/page.js"
+}

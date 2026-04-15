@@ -1,0 +1,22 @@
+{
+  "common": {
+    "start": "Start Test",
+    "next": "Next →",
+    "previous": "Previous",
+    "finish": "View Results",
+    "retake": "↺ Retake Test",
+    "share": "✦ Share Image",
+    "back": "← Back"
+  },
+  "intro": {
+    "title": "27 Questions, 16 EXO-L Personalities · Which Star Are You?"
+  },
+  "quiz": {
+    "progress": "Q{current} / {total}",
+    "percent": "{percent}%"
+  },
+  "result": {
+    "subtitle": "Your EXO-L Persona / YOUR EXOTI PERSONA",
+    "type_label": "[ {code} TYPE ]"
+  }
+}

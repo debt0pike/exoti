@@ -1,0 +1,104 @@
+
+> exoti@1.0.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/5) ...
+   Generating static pages (1/5) 
+   Generating static pages (2/5) 
+
+The `locale` parameter in `getRequestConfig` is deprecated, please switch to `await requestLocale`. See https://next-intl.dev/blog/next-intl-3-22#await-request-locale
+
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:53566
+    at /Users/Zhuanz/Documents/Obsidian Vault/exoti/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    ... 5 lines matching cause stack trace ...
+    at /Users/Zhuanz/Documents/Obsidian Vault/exoti/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:56117
+    at /Users/Zhuanz/Documents/Obsidian Vault/exoti/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+  digest: '113795152',
+  [cause]: n [Error]: Dynamic server usage: Route /_not-found couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+      at c (/Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/380.js:1:42171)
+      at f (/Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:58261)
+      at /Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:53487
+      at /Users/Zhuanz/Documents/Obsidian Vault/exoti/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at get locale (/Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:54947)
+      at /Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/app/_not-found/page.js:1:2665
+      at /Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:55008
+      at /Users/Zhuanz/Documents/Obsidian Vault/exoti/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at /Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:55780
+      at /Users/Zhuanz/Documents/Obsidian Vault/exoti/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+    description: "Route /_not-found couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+    digest: 'DYNAMIC_SERVER_USAGE'
+  }
+}
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:53566
+    at /Users/Zhuanz/Documents/Obsidian Vault/exoti/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    ... 5 lines matching cause stack trace ...
+    at /Users/Zhuanz/Documents/Obsidian Vault/exoti/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:56117
+    at /Users/Zhuanz/Documents/Obsidian Vault/exoti/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+  digest: '113795152',
+  [cause]: n [Error]: Dynamic server usage: Route /_not-found couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+      at c (/Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/380.js:1:42171)
+      at f (/Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:58261)
+      at /Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:53487
+      at /Users/Zhuanz/Documents/Obsidian Vault/exoti/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at get locale (/Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:54947)
+      at /Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/app/_not-found/page.js:1:2665
+      at /Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:55008
+      at /Users/Zhuanz/Documents/Obsidian Vault/exoti/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at /Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:55780
+      at /Users/Zhuanz/Documents/Obsidian Vault/exoti/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+    description: "Route /_not-found couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+    digest: 'DYNAMIC_SERVER_USAGE'
+  }
+}
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:53566
+    at /Users/Zhuanz/Documents/Obsidian Vault/exoti/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    ... 5 lines matching cause stack trace ...
+    at /Users/Zhuanz/Documents/Obsidian Vault/exoti/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:56117
+    at /Users/Zhuanz/Documents/Obsidian Vault/exoti/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+  digest: '113795152',
+  [cause]: n [Error]: Dynamic server usage: Route /_not-found couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+      at c (/Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/380.js:1:42171)
+      at f (/Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:58261)
+      at /Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:53487
+      at /Users/Zhuanz/Documents/Obsidian Vault/exoti/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at get locale (/Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:54947)
+      at /Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/app/_not-found/page.js:1:2665
+      at /Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:55008
+      at /Users/Zhuanz/Documents/Obsidian Vault/exoti/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at /Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:55780
+      at /Users/Zhuanz/Documents/Obsidian Vault/exoti/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+    description: "Route /_not-found couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+    digest: 'DYNAMIC_SERVER_USAGE'
+  }
+}
+
+Error occurred prerendering page "/_not-found". Read more: https://nextjs.org/docs/messages/prerender-error
+
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:53566
+    at /Users/Zhuanz/Documents/Obsidian Vault/exoti/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at get locale (/Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:54947)
+    at /Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/app/_not-found/page.js:1:2665
+    at /Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:55008
+    at /Users/Zhuanz/Documents/Obsidian Vault/exoti/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:55780
+    at /Users/Zhuanz/Documents/Obsidian Vault/exoti/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/Zhuanz/Documents/Obsidian Vault/exoti/.next/server/chunks/344.js:2:56117
+    at /Users/Zhuanz/Documents/Obsidian Vault/exoti/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+   Generating static pages (3/5) 
+ ✓ Generating static pages (5/5)
+
+> Export encountered errors on following paths:
+	/_not-found/page: /_not-found
