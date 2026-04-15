@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
 
 const locales = ['zh', 'ko', 'en'];
 
@@ -68,7 +70,7 @@ export const metadata: Metadata = {
   },
 }
 
-export default function LocaleLayout({
+export default async function LocaleLayout({
   children,
   params: { locale }
 }: {
@@ -80,5 +82,11 @@ export default function LocaleLayout({
     notFound();
   }
 
-  return children;
+  const messages = await getMessages();
+
+  return (
+    <NextIntlClientProvider messages={messages}>
+      {children}
+    </NextIntlClientProvider>
+  );
 }
