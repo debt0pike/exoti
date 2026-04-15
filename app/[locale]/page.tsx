@@ -1,16 +1,17 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import StarBackground from '@/components/StarBackground';
 
 export default function IntroPage() {
   const router = useRouter();
+  const locale = useLocale();
   const t = useTranslations('intro');
   const tCommon = useTranslations('common');
 
   const handleStart = () => {
-    router.push('/quiz');
+    router.push(`/${locale}/quiz`);
   };
 
   return (

@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import StarBackground from '@/components/StarBackground';
 import { questions } from '@/data/questions';
 import { QuizAnswer } from '@/data/types';
@@ -10,6 +10,7 @@ import { calculateResult } from '@/lib/scoring';
 
 export default function QuizPage() {
   const router = useRouter();
+  const locale = useLocale();
   const t = useTranslations('common');
   const tQuiz = useTranslations('quiz');
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,7 +40,7 @@ export default function QuizPage() {
 
   const handleFinish = () => {
     const resultType = calculateResult(answers);
-    router.push(`/result/${resultType}`);
+    router.push(`/${locale}/result/${resultType}`);
   };
 
   return (
@@ -49,7 +50,7 @@ export default function QuizPage() {
       <div className="relative z-10 max-w-4xl mx-auto px-3 sm:px-4 py-6 sm:py-8">
         {/* 导航栏 */}
         <div className="flex justify-between items-center mb-6 sm:mb-8">
-          <button onClick={() => router.push('/')} className="text-gold text-sm sm:text-base">
+          <button onClick={() => router.push(`/${locale}`)} className="text-gold text-sm sm:text-base">
             {t('back')}
           </button>
           <div className="font-space-mono text-xs sm:text-sm text-gold">
